@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Kalkulator</title>
+    <style>
+        label{
+            color:white;
+        }
+       
+        input{
+            background-color: antiquewhite;
+        }
+        form {
+            background-color: indianred;
+            width: 400px;
+            height: 400px;
+            padding: 50px;
+        }
+        .button {
+            background-color: antiquewhite;
+            color: black;
+            width: 100px;
+            height: 30px;
+        }
+         .button:hover{
+            background-color: lightpink;
+            color: white;
+            width: 100px;
+            height: 30px;
+
+        }
+
+        #result {
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+    <script>
+        function sum() {
+            form.result.value = parseInt(form.firstNum.value) + parseInt(form.secondNum.value);
+        }
+        function subm() {
+            form.result.value = parseInt(form.firstNum.value) - parseInt(form.secondNum.value);
+        }
+        function mult() {
+            form.result.value = parseInt(form.firstNum.value) * parseInt(form.secondNum.value);
+        }
+        function del() {
+           float 2 {(form.result.value = parseInt(form.firstNum.value) / parseInt(form.secondNum.value));
+        }
+
+
+
+    </script>
+</head>
+<body>
+    
+        <form name='form' action="/" method="post">
+            <label>vuvedi chislo:</label>
+            <input type="text" id="firstNum" /> <br /> <br />
+            <label>vuvedi chislo:</label>
+            <input type="text" id="secondNum" /> <br />
+            <br />
+            <label>rezultat:</label>
+            <input type="text" id="result" onclick="form.answer.value = (form.answer.value)" /> <br />
+            <div>
+
+                <br />
+                <input type="button" name="SumBtn" value="Subirane" class="button" onclick="sum();" />
+                <br /><br />
+                <input type="button" name="SubBtn" value="Izvajdane" class="button" onclick="subm()" />
+                <br /><br />
+                <input type="button" name="MultBtn" value="Umnojenie" class="button" onclick="mult()" />
+                <br /><br />
+                <input type="button" name="DivBtn" value="Delenie" class="button" onclick="del()" />
+                <br />
+            </div>
+        </form>
+    
+</body>
+</html>
